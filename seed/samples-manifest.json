@@ -1,0 +1,555 @@
+{
+  "images": {
+    "7cce21106c0c471c405f4453b1a56393bb4e7e6db4ecea0b68c08bea2d0ab0f4": {
+      "scenario": "N-260923-001",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-001-1.jpg"
+    },
+    "0cc29b3cb434a115c1236e953d147f549db659868649e9e2d68bf94bbbc4aed1": {
+      "scenario": "N-260923-001",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-001/現物-1.jpg"
+    },
+    "a208a465ee86f21fc49738d53014267638adc702d8d2f169f21491bee67e0d7f": {
+      "scenario": "N-260923-002",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-002-1.jpg"
+    },
+    "84d2c5d49b8e223dae2535ffdbb8c7efa14f99df23bd6581030ef6e8a73c82ae": {
+      "scenario": "N-260923-002",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-002/現物-1.jpg"
+    },
+    "cefd753676d7ff50445cb9d3aea7815939c26f3001b6ea13dd2ee10d5d50115c": {
+      "scenario": "N-260923-003",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-003-1.jpg"
+    },
+    "60cbe1f7c1bc1c3211c2b1b8618b8b487996be41e0bcf8604a5ee0c0a6f9edd8": {
+      "scenario": "N-260923-003",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-003/現物-1.jpg"
+    },
+    "3586dc8433788b254087a33ec9de11f2a61aa93b752c34aefd1c629fc3613c1b": {
+      "scenario": "N-260923-004",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-004-1.jpg"
+    },
+    "2aa5084fe7cad2f8a436ed5ef1915fdf425e832b97d332a1cfb347079f322707": {
+      "scenario": "N-260923-004",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-004/現物-1.jpg"
+    },
+    "e2aaa7b847f75a8f44ac90057b484bc6b7b14a864505dc28a9492724f7abfa37": {
+      "scenario": "N-260923-005",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-005-1.jpg"
+    },
+    "4f6fc3decc0bd5616a02142b44f128f1e9873a35531c5b97f1e230ef654fdb20": {
+      "scenario": "N-260923-005",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-005/現物-1.jpg"
+    },
+    "7fd7ef4d97f01049762c7e6ab6b0edc4a97bf774aecd97b07bbfaa35e5ce4d2d": {
+      "scenario": "N-260923-006",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-006-1.jpg"
+    },
+    "16546a6c272ac119f9fad74307c4d8303986d8513bb318f4e29cab1ea29a7edb": {
+      "scenario": "N-260923-006",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-006/現物-1.jpg"
+    },
+    "c09b8a576e3eb8c1e5fd0c7f39481ffc144b198dc7a788fbc5392de9fb6db7eb": {
+      "scenario": "N-260923-007",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-007-1.jpg"
+    },
+    "0867b2ba9a056dffb0e181d91250513c5e0ef158f89ffdb214265ae5746faad5": {
+      "scenario": "N-260923-007",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-007/現物-1.jpg"
+    },
+    "d9b5d19ceef9530f771766ea06189b6890b8551112d371218acfff2af0ab10da": {
+      "scenario": "N-260923-008",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-008-1.jpg"
+    },
+    "9d4297af6bcc84ad81dd444809e3d9750ee271c11c2ad69289037843a49ddbb8": {
+      "scenario": "N-260923-008",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-008/現物-1.jpg"
+    },
+    "9d5b590013d02042cc9ea61cc76a98f029b3bbde50ccadf903458d06ac1d47be": {
+      "scenario": "N-260923-009",
+      "role": "customer",
+      "file": "seed/images/customer/N-260923-009-1.jpg"
+    },
+    "f654d25445620834e19be4da5332c9850ef9c6742f16564d625405ee45d58edf": {
+      "scenario": "N-260923-009",
+      "role": "received",
+      "file": "samples/現物写真/N-260923-009/現物-1.jpg"
+    }
+  },
+  "scenarios": {
+    "N-260923-001": {
+      "title": "トレカ・問題なし",
+      "judgment": {
+        "overall": "OK",
+        "summary": "カード名・番号・レアリティ・枚数・状態が顧客写真と一致しています。",
+        "checks": [
+          {
+            "item": "カードの一致",
+            "result": "OK",
+            "confidence": 0.96,
+            "reason": "カード名「Flame Drake」、番号 025/165、レアリティ SR が顧客写真と一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "枚数",
+            "result": "OK",
+            "confidence": 0.97,
+            "reason": "申告1枚に対して現物も1枚です",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "OK",
+            "confidence": 0.91,
+            "reason": "縁・角に白欠けや折れは見られません",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "保護材",
+            "result": "OK",
+            "confidence": 0.93,
+            "reason": "顧客写真と同じくスリーブに入っています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-002": {
+      "title": "トレカ・枚数不足",
+      "judgment": {
+        "overall": "NG",
+        "summary": "申告は3枚ですが、現物は2枚しかありません。",
+        "checks": [
+          {
+            "item": "カードの一致",
+            "result": "OK",
+            "confidence": 0.93,
+            "reason": "「Aqua Fox」112/165 RR で顧客写真と一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "枚数",
+            "result": "NG",
+            "confidence": 0.95,
+            "reason": "申告3枚に対し、現物写真では重なりなく2枚しか確認できません",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "OK",
+            "confidence": 0.88,
+            "reason": "2枚とも縁・角に目立つ傷はありません",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "type": "数量不足",
+            "detail": "「Aqua Fox 112/165 RR」が申告3枚に対して2枚（1枚不足）",
+            "photo": "現物写真1"
+          }
+        ],
+        "observed_quantity": 2,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-003": {
+      "title": "トレカ・折れと白欠け",
+      "judgment": {
+        "overall": "NG",
+        "summary": "カードは一致していますが、顧客写真になかった折れと縁の白欠けがあります。",
+        "checks": [
+          {
+            "item": "カードの一致",
+            "result": "OK",
+            "confidence": 0.95,
+            "reason": "「Thunder Wolf」201/165 SAR で一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "枚数",
+            "result": "OK",
+            "confidence": 0.97,
+            "reason": "申告1枚に対して現物も1枚です",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "NG",
+            "confidence": 0.86,
+            "reason": "現物写真1の右上の角付近に折れ線、下の縁に白欠けがあります。顧客写真1には見られません",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "保護材",
+            "result": "OK",
+            "confidence": 0.84,
+            "reason": "スリーブに入っています",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "type": "汚破損",
+            "detail": "「Thunder Wolf 201/165 SAR」の右上の角付近に折れ線、下の縁に白欠け",
+            "photo": "現物写真1"
+          }
+        ],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-004": {
+      "title": "アパレル・色違い",
+      "judgment": {
+        "overall": "NG",
+        "summary": "申告はネイビーですが、届いたのは赤のTシャツです。",
+        "checks": [
+          {
+            "item": "色・柄",
+            "result": "NG",
+            "confidence": 0.94,
+            "reason": "顧客写真1は紺、現物写真1は赤です。照明の差の範囲を超えており、下げ札の表記も RED です",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "サイズ",
+            "result": "OK",
+            "confidence": 0.9,
+            "reason": "下げ札の表記は M で申告と一致しています",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "OK",
+            "confidence": 0.85,
+            "reason": "汚れ・穴・ほつれは見られません",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "付属品・タグ",
+            "result": "OK",
+            "confidence": 0.82,
+            "reason": "下げ札が付いています",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "type": "色違い",
+            "detail": "「ロゴTシャツ」がネイビーではなく赤",
+            "photo": "現物写真1"
+          }
+        ],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-005": {
+      "title": "アパレル・問題なし",
+      "judgment": {
+        "overall": "OK",
+        "summary": "色・サイズ・状態とも顧客写真と一致しています。",
+        "checks": [
+          {
+            "item": "色・柄",
+            "result": "OK",
+            "confidence": 0.92,
+            "reason": "グレーで一致しています。背景の違いによる明るさの差のみです",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "サイズ",
+            "result": "OK",
+            "confidence": 0.93,
+            "reason": "タグ表記 L で申告と一致しています",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "OK",
+            "confidence": 0.9,
+            "reason": "汚れ・穴・ほつれは見られません",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-006": {
+      "title": "おもちゃ・箱の角つぶれ（顧客別ルール）",
+      "judgment": {
+        "overall": "NG",
+        "summary": "箱の右上の角がつぶれています。顧客C-1002のルールでは軽微でもNGです。",
+        "checks": [
+          {
+            "item": "商品の一致",
+            "result": "OK",
+            "confidence": 0.95,
+            "reason": "「ROBO BUILDER X-01」で顧客写真と一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "箱の状態",
+            "result": "NG",
+            "confidence": 0.9,
+            "reason": "現物写真1の右上の角がつぶれています（顧客写真1にはない）。顧客別ルールにより軽微でもNGです",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "未開封・開封",
+            "result": "OK",
+            "confidence": 0.88,
+            "reason": "シュリンク包装が残っており未開封です",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "初回特典",
+            "result": "要確認",
+            "confidence": 0.5,
+            "reason": "未開封のため、特典カードの有無は外から確認できません",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "type": "汚破損",
+            "detail": "「ROBO BUILDER X-01」の箱の右上の角につぶれ",
+            "photo": "現物写真1"
+          }
+        ],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": [
+          "未開封品で、特典の有無を外から確認できない場合の扱いが決まっていない"
+        ]
+      }
+    },
+    "N-260923-007": {
+      "title": "おもちゃ・問題なし",
+      "judgment": {
+        "overall": "OK",
+        "summary": "商品・箱の状態・未開封とも顧客写真と一致しています。",
+        "checks": [
+          {
+            "item": "商品の一致",
+            "result": "OK",
+            "confidence": 0.94,
+            "reason": "「MINI RACER SET」4台入りで一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "箱の状態",
+            "result": "OK",
+            "confidence": 0.9,
+            "reason": "つぶれ・破れ・水濡れ跡は見られません",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "未開封・開封",
+            "result": "OK",
+            "confidence": 0.91,
+            "reason": "シュリンク包装が残っています",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    },
+    "N-260923-008": {
+      "title": "靴・専用スキルなし",
+      "judgment": {
+        "overall": "要確認",
+        "summary": "商品は一致しているように見えますが、靴専用の検品基準がないため人が確認してください。",
+        "checks": [
+          {
+            "item": "商品の一致",
+            "result": "OK",
+            "confidence": 0.85,
+            "reason": "白のランニングシューズで、形とデザインが顧客写真と一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "数量",
+            "result": "OK",
+            "confidence": 0.95,
+            "reason": "左右1足です",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "色",
+            "result": "OK",
+            "confidence": 0.88,
+            "reason": "白で一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "形状・汚破損",
+            "result": "要確認",
+            "confidence": 0.6,
+            "reason": "ソールに薄い汚れのようなものがありますが、新品として許容できるかの基準がありません",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "サイズ",
+            "result": "要確認",
+            "confidence": 0.5,
+            "reason": "サイズタグが写っていないため確認できません",
+            "evidence": []
+          }
+        ],
+        "issues": [],
+        "observed_quantity": 1,
+        "additional_photos": [
+          "靴の内側のサイズタグ",
+          "ソールのアップ"
+        ],
+        "skill_gaps": [
+          "靴のサイズ表記（US / EU / cm）の照合方法",
+          "新品のソールの汚れ・使用感の許容範囲",
+          "靴箱の有無・状態の扱い"
+        ]
+      }
+    },
+    "N-260923-009": {
+      "title": "アパレル・問題なし（同じ顧客の2件目）",
+      "judgment": {
+        "overall": "OK",
+        "summary": "色・サイズ・状態とも顧客写真と一致しています。",
+        "checks": [
+          {
+            "item": "色・柄",
+            "result": "OK",
+            "confidence": 0.93,
+            "reason": "ブラックで一致しています",
+            "evidence": [
+              "顧客写真1",
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "サイズ",
+            "result": "OK",
+            "confidence": 0.92,
+            "reason": "下げ札の表記 L で一致しています",
+            "evidence": [
+              "現物写真1"
+            ]
+          },
+          {
+            "item": "状態",
+            "result": "OK",
+            "confidence": 0.9,
+            "reason": "汚れ・穴・ほつれは見られません",
+            "evidence": [
+              "現物写真1"
+            ]
+          }
+        ],
+        "issues": [],
+        "observed_quantity": 1,
+        "additional_photos": [],
+        "skill_gaps": []
+      }
+    }
+  }
+}
